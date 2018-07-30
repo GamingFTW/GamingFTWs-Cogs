@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "GamingFTW",
+    "INSTALL_MSG" : "[p]dayssincehz to display the number days since the last Hanazuki episode.",
+    "NAME" : "DaySinceHanazuki",
+    "SHORT" : "Days Since Hanzuki",
+    "DESCRIPTION" : "Displays the number of days since the last Hanazuki episode.",
+    "TAGS" : ["hanazuki", "fanbase", "countdown," "timer"]
+}
