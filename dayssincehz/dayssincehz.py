@@ -25,7 +25,7 @@ class DaysSinceHz:
 
         delta = today - dayssincehz
 
-        await self.bot.say("```" + str(delta.days) + " days days since last Hanazuki Episode!```")
+        await self.bot.say("```" + str(delta.days) + " days since last Hanazuki Episode!```")
 
 
 def setup(bot):
