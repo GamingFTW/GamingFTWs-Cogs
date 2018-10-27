@@ -24,11 +24,10 @@ class DaysSinceHz:
         dayssincehz = datetime.datetime.fromtimestamp(1500004817)
 
         delta = now - dayssincehz
-		hours, remainder = divmod(delta.seconds, 3600)
-		minutes, seconds = divmod(remainder, 60)
-		
-		await self.bot.say("```It has been " + str(delta.days) + " days " + str(hours) + " hours " + str(minutes) + " minutes and " + str(seconds) + " seconds since last official Hanazuki Episode!```")
-		
-		
+        hours, remainder = divmod(delta.seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+
+        await self.bot.say("```It has been " + str(delta.days) + " days " + str(hours) + " hours " + str(minutes) + " minutes and " + str(seconds) + " seconds since last official Hanazuki Episode!```")
+
 def setup(bot):
     bot.add_cog(DaysSinceHz(bot))
