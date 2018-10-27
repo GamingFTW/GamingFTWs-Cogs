@@ -21,7 +21,7 @@ class DaysSinceHz:
         if (now.month == 7 and now.day > 13):
             year = now.year + 1
 
-        dayssincehz = datetime.datetime.fromtimestamp(1531540817)
+        dayssincehz = datetime.datetime.fromtimestamp(1500004817)
 
         delta = now - dayssincehz
 
