@@ -5,14 +5,14 @@ from discord.ext import commands
 
 
 class DaysSinceHz:
-    """Simple display of number days since the last Hanazuki episode."""
+    """Simple display of number days and seconds since the last official Hanazuki episode."""
 
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command()
     async def dayssincehz(self):
-        """Display days since the last Hanzuki Episode"""
+        """Display days and seconds since the last official Hanzuki Episode"""
 
         now = datetime.datetime.now()
         today = date(now.year, now.month, now.day)
@@ -21,11 +21,11 @@ class DaysSinceHz:
         if (now.month == 7 and now.day > 13):
             year = now.year + 1
 
-        dayssincehz = date(2017, 7, 13)
+        dayssincehz = datetime.fromtimestamp(1531540817)
 
-        delta = today - dayssincehz
+        delta = now - dayssincehz
 
-        await self.bot.say("```It has been " + str(delta.days) + " days since last Hanazuki Episode!```")
+        await self.bot.say("```It has been " + str(delta.days) + " days and " + str(delta.seconds) + " seconds since last official Hanazuki Episode!```")
 
 
 def setup(bot):
