@@ -15,11 +15,6 @@ class DaysSinceHz:
         """Display days and seconds since the last official Hanzuki Episode"""
 
         now = datetime.datetime.now()
-        today = date(now.year, now.month, now.day)
-
-        year = now.year
-        if (now.month == 7 and now.day > 13):
-            year = now.year + 1
 
         dayssincehz = datetime.datetime.fromtimestamp(1500004817)
 
