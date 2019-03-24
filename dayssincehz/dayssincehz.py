@@ -16,7 +16,7 @@ class DaysSinceHz:
 
         now = datetime.datetime.now()
 
-        dayssincehz = datetime.datetime.fromtimestamp(1500004817)
+        dayssincehz = datetime.datetime.fromtimestamp(1553360400)
 
         delta = now - dayssincehz
         hours, remainder = divmod(delta.seconds, 3600)
