@@ -1,8 +1,15 @@
 {
-    "AUTHOR" : "GamingFTW",
-    "INSTALL_MSG" : "[p]dayssincehz to display the number days and seconds since the last official Hanazuki episode.",
-    "NAME" : "DaySinceHanazuki",
-    "SHORT" : "Days Since Hanzuki",
-    "DESCRIPTION" : "Displays the number of days and seconds since the last official Hanazuki episode.",
-    "TAGS" : ["hanazuki", "fanbase", "countdown," "timer"]
+  "author": [
+    "GamingFTW"
+  ],
+  "install_msg": "[p]dayssincehz to display the date and time between now and the last Hanazuki episode.",
+  "short": "[p]dayssincehz Allows users to calculate the days since the last Hanazuki episode.",
+  "description": "Tool to calculate the date and time between now and the last Hanazuki episode.",
+  "tags": [
+    "hanazuki",
+    "fanbase",
+	"countdown",
+	"date",
+	"timer"
+  ],
 }
