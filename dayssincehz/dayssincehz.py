@@ -4,7 +4,7 @@ import discord
 from redbot.core import commands
 
 
-class DaysSinceHZ:
+class DaysSinceHZ(commands.Cog):
     """Simple display of the number days and seconds since the last official Hanazuki episode."""
 
     def __init__(self, bot):
@@ -22,4 +22,4 @@ class DaysSinceHZ:
         hours, remainder = divmod(delta.seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
 
-        await ctx.send("```It has been " + str(delta.days) + " days " + str(hours) + " hours " + str(minutes) + " minutes and " + str(seconds) + " seconds since last official Hanazuki Episode!```")
+        await ctx.send("It has been " + str(delta.days) + " days " + str(hours) + " hours " + str(minutes) + " minutes and " + str(seconds) + " seconds since last official Hanazuki Episode!")
