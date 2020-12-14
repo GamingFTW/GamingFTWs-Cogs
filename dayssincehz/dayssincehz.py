@@ -22,4 +22,5 @@ class DaysSinceHZ(commands.Cog):
         hours, remainder = divmod(delta.seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
 
-        await ctx.send("It has been " + str(delta.days) + " days " + str(hours) + " hours " + str(minutes) + " minutes and " + str(seconds) + " seconds since last official Hanazuki Episode!")
+        #await ctx.send("It has been " + str(delta.days) + " days " + str(hours) + " hours " + str(minutes) + " minutes and " + str(seconds) + " seconds since last official Hanazuki Episode!")
+        await ctx.send("It has been {} days, {} hours, {} minutes and {} seconds since last official Hanazuki Episode!".format(delta.days, hours, minutes, seconds))
